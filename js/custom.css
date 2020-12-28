@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+p {
+  text-align: left;
+}
+.custom-width {
+  width: 100%;
+  max-width: 540px;
+  padding: 15px;
+  margin: auto;
+}
+.polaroid {
+  margin: auto;
+  width: 119px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.logo {
+  -webkit-transition: 0.4s;
+  -webkit-transition:-webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+}
+.logo:hover {
+  transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+}
+.td-clipboard {
+  cursor: pointer;
+}
+

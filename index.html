@@ -97,16 +97,16 @@
     <script>
       var clipboard = new ClipboardJS('.td-clipboard');
       clipboard.on("success", function(e) {
-        $(e.trigger).text("複製成功").css("color","green"),
+        $(e.trigger).text("复制成功").css("color","green"),
         setTimeout(function() {
-		  $(e.trigger).text("點擊複製").removeAttr("style")
+		  $(e.trigger).text("点击复制").removeAttr("style")
 		}, 3000),
         e.clearSelection()
       }),
       clipboard.on("error", function(e) {
-        $(e.trigger).text("複製失敗").css("color","red"),
+        $(e.trigger).text("复制失败").css("color","red"),
         setTimeout(function() {
-		  $(e.trigger).text("點擊複製").removeAttr("style")
+		  $(e.trigger).text("点击复制").removeAttr("style")
 		}, 3000)
       })
     </script>

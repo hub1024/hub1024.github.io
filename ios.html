@@ -1,0 +1,184 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>V2ray - The Best Setup Guide</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="v2ray" />
+		<meta name="keywords" content="v2ray" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro 
+					<div id="intro">
+						<h1>V2RAY<br />
+						Setup Guide</h1>
+						<p>Easy and friendly setup guide for v2ray.<br />
+						簡單易懂的V2ray用戶使用教程.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+					-->
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">V2RAY</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html"><i class="fa fa-windows"></i>  Windows</a></li>
+							<li class="active"><a href="ios.html"><i class="fa fa-apple"></i>  iPhone</a></li>
+							<li><a href="android.html"><i class="fa fa-android"></i>  Android</a></li>
+							<li><a href="mac.html"><i class="fa fa-apple"></i>  Macbook</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h3>iOS設備(iPhone/iPad)V2ray使用教程</h3>
+									<p>前言：您需要確保網絡暢通，下載軟件，配置節點信息，開始使用。<br>如果您仔細閱讀並遵從所有步驟，一般僅需10－15分鐘。<br>當然，您還需要可用的節點信息，一般可從v2ray提供商頁面獲取。</p>
+								</header>
+								<hr>
+								<h4>第一步，下載用於iOS設備的v2ray軟件</h4>
+								<p>下述多款App均可使用，一般用戶推薦使用shadowrocket</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>描述/Description</th>
+												<th>Appstore下載/Links</th>
+                                                                                                <th>非官方</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>shadowrocket $2.99</td>
+												<td><a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8" target="_blank">Appstore(需要非國區帳號)</a></td>
+                                                                                                <td><a href="https://free.shadowrocket.online" target="_blank">第三方(無需帳號，免費)</a></td>
+											</tr>
+											<tr>
+												<td>Kitsunebi $4.99</td>
+												<td><a href="https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?mt=8" target="_blank">Appstore(需要非國區帳號)</a></td>
+                                                                                                <td><a href="https://apps.kitsunebi.online" target="_blank">第三方(無需帳號，免費)</a></td>
+											</tr>
+											<tr>
+												<td>Quantumult $4.99</td>
+												<td><a href="https://itunes.apple.com/us/app/quantumult/id1252015438?mt=8" target="_blank">Appstore(需要非國區帳號)</a></td>
+                                                                                                <td>None</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<p>說明：以上App均無法在Appstore中國區購買下載，您可以註冊美區／香港區Appstore帳號，付款方式選none，帳單地址信息可於google地圖獲取，然後從淘寶購買GiftCards充值此Appstore帳號，再購買下載App</p>
+                                                                <p>如果沒有非中國區帳號，可通過第三方提供的方式下載，其原理是共享下載帳號，可按頁面提示操作，放心使用</p>
+								<h4>第二步，打開shadowrocket，配置節點信息</h4>
+								<p>目前主要有三種配置節點信息的方法，可以根據妳的習慣和需要選擇</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>方法/Method</th>
+												<th>描述/Description</th>
+												<th>前往/Go</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>訂閱方式/Subscription</td>
+												<td>配置訂閱服務器，可一次性從商家獲取最新的所有節點信息，並可每次啟動自動更新，推薦</td>
+												<td><a href="#subscription">Here</a></td>
+											</tr>
+											<tr>
+												<td>掃二維碼配置/Scan</td>
+												<td>通過掃描屏幕中的二維碼，自動配置，每次僅配置單個節點</td>
+												<td><a href="#scan">Here</a></td>
+											</tr>
+											<tr>
+												<td>手動配置/Manually</td>
+												<td>增加新節點，並逐一配置相關節點信息</td>
+												<td><a href="#manually">Here</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h5 id="subscription">方法一，訂閱方式</h5>
+								<p>打開shadowrocket－首頁，右上角點“+”</p>
+								<div class="image half"><img src="images/ios-subscribe-01.png" alt="" /></div>
+								<p>點“類型”，選擇“Subscribe”</p>
+								<div class="image half"><img src="images/ios-subscribe-02.png" alt="" /></div>
+								<div class="image half"><img src="images/ios-subscribe-03.png" alt="" /></div>
+								<p>URL填提供商那邊得到的訂閱地址，備註可註明提供商的名稱，方便識別，然後右上角點“完成”</p>
+								<div class="image half"><img src="images/ios-subscribe-04.png" alt="" /></div>
+								<p>填加完成後，會立即從訂閱地址中獲取節點信息，選擇任意節點，向右滑動連結</p>
+								<div class="image half"><img src="images/ios-subscribe-05.png" alt="" /></div>
+								<p>首次連結，系統會詢問是否允許，點“Allow”，如果提示輸入密碼，則輸入鎖屏密碼，接下來顯示“已連接”</p>
+								<div class="image half"><img src="images/ios-subscribe-06.png" alt="" /></div>
+								<p>完成，可打開瀏覽器訪問網址測試</p>
+								<p>可在“設置”－“服務器訂閱”中開啟“打開時更新”，則每次打開App會自動更新訂閱</p>
+								<h5 id="scan">方法二，掃碼配置</h5>
+								<p>首先在提供商網頁上打開v2ray節點的二維碼圖片</p>
+								<p>然後shadowrocket－首頁，點左上角</p>
+								<div class="image half"><img src="images/ios-scan-01.png" alt="" /></div>
+								<p>程序自動識別二維碼並導入服務器節點信息</p>
+								<p>選擇節點，向右滑動連結</p>
+								<div class="image half"><img src="images/ios-subscribe-06.png" alt="" /></div>
+								<p>首次連結，系統會詢問是否允許，點“Allow”，如果提示輸入密碼，則輸入鎖屏密碼，接下來顯示“已連接”</p>
+								<p>完成，可打開瀏覽器訪問網址測試</p>
+								<h5 id="manually">方法三，手動配置</h5>
+								<p>打開shadowrocket－首頁，右上角點“+”</p>
+								<div class="image half"><img src="images/ios-manually-01.png" alt="" /></div>
+								<p>點“類型”，選擇“Vmess”</p>
+								<div class="image half"><img src="images/ios-manually-02.png" alt="" /></div>
+								<div class="image half"><img src="images/ios-manually-03.png" alt="" /></div>
+								<p>根據提供商提供的節點信息，填入服務器／端口／UUID，其他沒有點不用改，備註可自命名，然後點“完成”</p>
+								<div class="image half"><img src="images/ios-manually-04.png" alt="" /></div>
+								<p>選擇節點，向右滑動連結</p>
+								<div class="image half"><img src="images/ios-manually-05.png" alt="" /></div>
+								<p>首次連結，系統會詢問是否允許，點“Allow”，如果提示輸入密碼，則輸入鎖屏密碼，接下來顯示“已連接”</p>
+								<div class="image half"><img src="images/ios-manually-06.png" alt="" /></div>
+								<div class="image half"><img src="images/ios-manually-07.png" alt="" /></div>
+								<p>完成，可打開瀏覽器訪問網址測試</p>
+							</section>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; 2018 v2.help</li><li><i class="fa fa-envelope"></i>  admin#v2.help</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62083646-14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62083646-14');
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,178 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>V2ray - The Best Setup Guide</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="v2ray" />
+		<meta name="keywords" content="v2ray" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro 
+					<div id="intro">
+						<h1>V2RAY<br />
+						Setup Guide</h1>
+						<p>Easy and friendly setup guide for v2ray.<br />
+						簡單易懂的V2ray用戶使用教程.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+				-->
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">V2RAY</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html"><i class="fa fa-windows"></i>  Windows</a></li>
+							<li><a href="ios.html"><i class="fa fa-apple"></i>  iPhone</a></li>
+							<li class="active"><a href="android.html"><i class="fa fa-android"></i>  Android</a></li>
+							<li><a href="mac.html"><i class="fa fa-apple"></i>  Macbook</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h3>Android設備V2ray使用教程</h3>
+									<p>前言：您需要確保網絡暢通。下載軟件，配置節點信息，開始使用。<br>仔細閱讀並遵從所有步驟，一般僅需10－15分鐘。<br>當然，您還需要可用的節點信息，一般可從v2ray提供商頁面獲取。</p>
+								</header>
+								<hr>
+								<h4>第一步，下載用於Android設備的V2Ray軟件</h4>
+								<p>目前有多款App可用於Android，包括BifrostV、V2RayNG、V2Ray Go和Actinium，此處以V2RayNG為例</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>描述/Description</th>
+												<th>其他/Others</th>
+												<th>Github</th>
+												<th>PlayStore</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>V2RayNG</td>
+												<td><a href="download/app-release.apk" target="_blank">本地下載</a></td>
+												<td>None</td>
+												<td>None</td>
+											</tr>
+											<tr>
+												<td>BifrostV</td>
+												<td><a href="https://apkpure.com/bifrostv/com.github.dawndiy.bifrostv" target="_blank">APK Pure</a></td>
+												<td>None</td>
+												<td><a href="https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv" target="_blank">PlayStore</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h4>第二步，打開下載的apk文件進行安裝</h4>
+								<p>如果因權限問題阻止，請在對應系統設置中允許</p>
+								<p>安裝完成後，打開V2RayNG</p>
+								<div class="image half"><img src="images/android-01.png" alt="" /></div>
+								<h4>第三步，配置節點信息</h4>
+								<p>目前主要有三種配置節點信息的方法，可以根據妳的習慣和需要選擇</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>方法/Method</th>
+												<th>描述/Description</th>
+												<th>前往/Go</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>訂閱方式/Subscription</td>
+												<td>配置訂閱服務器，可一次性從商家獲取最新的所有節點信息，並可每次啟動自動更新，推薦</td>
+												<td><a href="#subscription">Here</a></td>
+											</tr>
+											<tr>
+												<td>掃二維碼配置/Scan</td>
+												<td>通過掃描屏幕中的二維碼，自動配置，每次僅配置單個節點</td>
+												<td><a href="#scan">Here</a></td>
+											</tr>
+											<tr>
+												<td>手動配置/Manually</td>
+												<td>增加新節點，並逐一配置相關節點信息</td>
+												<td><a href="#manually">Here</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<h5 id="subscription">方法一，訂閱方式</h5>
+								<p>打開V2RayNG，右上角點 <img src="images/andoird-settings-icon.png" alt="" height="15" /> ，調出菜單，點“訂閱設置”</p>
+								<div class="image half"><img src="images/android-02.png" alt="" /></div>
+								<p>地址(url)填寫提供商提供的訂閱地址，備註可自定義名稱，一般填提供商名稱，方便識別，右上角點勾保存</p>
+								<div class="image half"><img src="images/android-03.png" alt="" /></div>
+								<p>自動從訂閱地址獲取所有節點信息，您也可以在右上角菜單中，隨時手動“更新訂閱”</p>
+								<p>選擇任意已配置節點，點右下角圖標，啟動服務。稍等片刻，提示啟動服務成功</p>
+								<div class="image half"><img src="images/android-04.png" alt="" /></div>
+								<p>如果啟動過程彈出提示，請勾選“我信任此應用”，然後確定</p>
+								<div class="image half"><img src="images/android-05.png" alt="" /></div>
+								<p>完成，可打開瀏覽器訪問網址測試</p>
+								<h5 id="scan">方法二，掃碼配置</h5>
+								<p>首先在提供商網頁上打開v2ray節點的二維碼圖片</p>
+								<p>打開V2RayNG，右上角點“+”，選擇“掃描二維碼”</p>
+								<div class="image half"><img src="images/android-06.png" alt="" /></div>
+								<p>程序自動識別二維碼並導入服務器節點信息</p>
+								<p>選擇任意已配置節點，點右下角圖標，啟動服務。稍等片刻，提示啟動服務成功</p>
+								<div class="image half"><img src="images/android-04.png" alt="" /></div>
+								<p>如果啟動過程彈出提示，請勾選“我信任此應用”，然後確定</p>
+								<div class="image half"><img src="images/android-05.png" alt="" /></div>
+								<p>完成，可打開瀏覽器訪問網址測試</p>
+								<h5 id="manually">方法三，手動配置</h5>
+								<p>打開V2RayNG，右上角點“+”，選擇“手動輸入[Vmess]”</p>
+								<div class="image half"><img src="images/android-07.png" alt="" /></div>
+								<p>根據提供商提供的節點信息，填入地址／端口／用戶ID/AlterID，其他沒有不用改，remark可自命名，然後點“完成”</p>
+								<div class="image half"><img src="images/android-08.png" alt="" /></div>
+								<p>選擇任意已配置節點，點右下角圖標，啟動服務。稍等片刻，提示啟動服務成功</p>
+								<div class="image half"><img src="images/android-04.png" alt="" /></div>
+								<p>如果啟動過程彈出提示，請勾選“我信任此應用”，然後確定</p>
+								<div class="image half"><img src="images/android-05.png" alt="" /></div>
+								<p>完成，可打開瀏覽器訪問網址測試</p>
+							</section>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; 2018 v2.help</li><li><i class="fa fa-envelope"></i>  admin#v2.help</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62083646-14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62083646-14');
+</script>
+
+	</body>
+</html>

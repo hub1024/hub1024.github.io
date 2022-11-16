@@ -28,12 +28,22 @@ proxy-groups:
   - name: "\U0001F514 Auto-Fast"
     type: "url-test"
     url: "http://www.gstatic.cn/generate_204"
-    interval: 120
+    interval: 300
     tolerance: 100
-    proxies: []
-    use:
-      - provider-glados       
-  - name: "\U0001F9F1 PKU"
+    proxies:
+        - GLaDOS-H2-00
+        - GLaDOS-H2-01
+        - GLaDOS-H2-02
+        - GLaDOS-N2-00
+        - GLaDOS-N2-01
+        - GLaDOS-N2-02
+        - GLaDOS-N2-03
+        - GLaDOS-N2-04
+        - GLaDOS-N2-05
+        - GLaDOS-S1-01
+        - GLaDOS-S1-02
+        - GLaDOS-S1-03      
+  - name: "\U0001F9F1 GFW"
     proxies: []
     type: select
     use:

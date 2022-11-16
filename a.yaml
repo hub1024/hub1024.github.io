@@ -33,7 +33,6 @@ proxy-groups:
     proxies: []
     use:
       - provider-glados
-      - provider-gfw
   - name: "\U0001F9F1 GFW"
     type: "select"
     proxies:

@@ -69,7 +69,6 @@ proxy-groups:
     type: select
     use:
       - provider-gfw
-    type: select
   - name: "\U0001F680 GLaDOS"
     proxies: []
     type: select

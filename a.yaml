@@ -25,17 +25,19 @@ dns:
 
 proxies: []
 proxy-groups:
-  - name: "\U0001F514 Info"
+  - name: "\U0001F514 Auto-Fast"
+    type: "url-test"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 120
+    tolerance: 100
     proxies: []
-    type: select
     use:
-      - provider-info
-  - name: "\U0001F9F1 GFW"
+      - provider-glados       
+  - name: "\U0001F9F1 PKU"
     proxies: []
     type: select
     use:
       - provider-gfw
-      - provider-glados
   - name: "\U0001F393 Scholar"
     proxies: []
     type: select
@@ -52,10 +54,11 @@ proxy-groups:
       - DIRECT
       - REJECT
     type: select
-  - name: "\U0001F680 Accel."
-    proxies:
-      - DIRECT
-      - "\U0001F9F1 GFW"
+  - name: "\U0001F680 PKU"
+    proxies: []
+    type: select
+    use:
+      - provider-gfw
     type: select
   - name: "\U0001F680 GLaDOS"
     proxies: []

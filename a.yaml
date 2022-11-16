@@ -34,10 +34,11 @@ proxy-groups:
     use:
       - provider-gfw
   - name: "\U0001F9F1 GFW"
-    proxies: []
-    type: select
-    use:
-      - provider-gfw
+    type: "select"
+    proxies:
+        - "\U0001F514 Auto-Fast"
+        - "\U0001F680 GLaDOS"
+        - "\U0001F680 PKU"
   - name: "\U0001F393 Scholar"
     proxies: []
     type: select

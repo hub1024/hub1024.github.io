@@ -110,6 +110,7 @@ proxy-providers:
 rules:
   - "DOMAIN-KEYWORD,glados,\U0001F9F1 GFW"
   - "DOMAIN-KEYWORD,workers,\U0001F9F1 GFW"
+  - "DOMAIN-KEYWORD,faka,\U0001F9F1 GFW"
   - DOMAIN-SUFFIX,ieee.org,DIRECT
   - DOMAIN-SUFFIX,springer.com,DIRECT
   - DOMAIN-SUFFIX,sciencedirect.com,DIRECT

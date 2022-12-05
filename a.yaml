@@ -75,11 +75,6 @@ proxy-providers:
     path: ./provider-gfw.yaml
     type: http
     url: https://941321.xyz/clash/james@wallesspku.space/4naj7?client=cfw&version=0.20.5&group=gfw
-  provider-info:
-    interval: 600
-    path: ./provider-info.yaml
-    type: http
-    url: https://941321.xyz/clash/james@wallesspku.space/4naj7?client=cfw&version=0.20.5&group=info
   provider-scholar:
     health-check:
       enable: true

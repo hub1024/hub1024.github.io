@@ -39,17 +39,6 @@ proxy-groups:
         - "\U0001F514 Auto-Fast"
         - "\U0001F680 GLaDOS"
         - "\U0001F680 PKU"
-  - name: "\U0001F393 Scholar"
-    proxies: []
-    type: select
-    use:
-      - provider-scholar
-  - name: "\u2194\uFE0F 6to4"
-    proxies:
-      - DIRECT
-    type: select
-    use:
-      - provider-tunnel
   - name: "\U0001F6D1 AD"
     proxies:
       - DIRECT
@@ -75,24 +64,6 @@ proxy-providers:
     path: ./provider-gfw.yaml
     type: http
     url: https://941321.xyz/clash/james@wallesspku.space/4naj7?client=cfw&version=0.20.5&group=gfw
-  provider-scholar:
-    health-check:
-      enable: true
-      interval: 3600
-      url: http://cp.cloudflare.com/
-    interval: 3600
-    path: ./provider-scholar.yaml
-    type: http
-    url: https://941321.xyz/clash/james@wallesspku.space/4naj7?client=cfw&version=0.20.5&group=scholar
-  provider-tunnel:
-    health-check:
-      enable: true
-      interval: 3600
-      url: http://cp.cloudflare.com/
-    interval: 3600
-    path: ./provider-tunnel.yaml
-    type: http
-    url: https://941321.xyz/clash/james@wallesspku.space/4naj7?client=cfw&version=0.20.5&group=tunnel
   provider-glados:
     health-check:
       enable: true
@@ -397,8 +368,6 @@ rules:
   - DOMAIN-SUFFIX,nature.com,DIRECT
   - DOMAIN-SUFFIX,science.org,DIRECT
   - DOMAIN-SUFFIX,journals.aps.org,DIRECT
-  - "DOMAIN-KEYWORD,scholar.google,\U0001F393 Scholar"
-  - "DOMAIN-KEYWORD,scholar.googleusercontent,\U0001F393 Scholar"
   - "DOMAIN-KEYWORD,tesla,\U0001F9F1 GFW"
   - "DOMAIN-KEYWORD,appledaily,\U0001F9F1 GFW"
   - "DOMAIN-KEYWORD,beetalk,\U0001F9F1 GFW"

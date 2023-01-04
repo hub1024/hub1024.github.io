@@ -39,6 +39,7 @@ proxy-groups:
         - "\U0001F514 Auto-Fast"
         - "\U0001F680 GLaDOS"
         - "\U0001F680 PKU"
+        - "\U0001F680 Suifeng"
   - name: "\U0001F6D1 AD"
     proxies:
       - DIRECT
@@ -54,6 +55,11 @@ proxy-groups:
     type: select
     use:
       - provider-glados
+  - name: "\U0001F680 Suifeng"
+    proxies: []
+    type: select
+    use:
+      - provider-suifeng  
 proxy-providers:
   provider-gfw:
     health-check:
@@ -73,6 +79,15 @@ proxy-providers:
     path: ./provider-glados.yaml
     type: http
     url: https://api-suc.0z.gs/sub?target=clash&url=https%3A%2F%2Fupdate.glados-config.com%2Fclash%2F160883%2Fe63fb13%2F88424%2Fglados.yaml&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true
+  provider-suifeng:
+    health-check:
+      enable: true
+      interval: 3600
+      url: http://cp.cloudflare.com/
+    interval: 3600
+    path: ./provider-suifeng.yaml
+    type: http
+    url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2F233588.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dfabeac1d46da1b2e7bb48c367d86e38a&config=https%3A%2F%2Fraw.githubusercontent.com%2FCareyWang%2FRules%2Fmaster%2FRemoteConfig%2Funiversal%2Fno-urltest.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
 rules:
   - "DOMAIN-KEYWORD,glados,\U0001F9F1 GFW"
   - "DOMAIN-KEYWORD,workers,\U0001F9F1 GFW"

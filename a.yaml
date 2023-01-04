@@ -87,8 +87,8 @@ proxy-providers:
     interval: 3600
     path: ./provider-suifeng.yaml
     type: http
-    url: https://api-suc.0z.gs/sub?target=clash&url=https%3A%2F%2F233588.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dfabeac1d46da1b2e7bb48c367d86e38a&insert=false&config=config%2Fapi_0z_gs.ini&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true
-    rules:
+    url: https://api-suc.0z.gs/sub?target=clash&url=https%3A%2F%2F233588.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dfabeac1d46da1b2e7bb48c367d86e38a&insert=false&config=config%2Fapi_0z_gs.ini&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=false&new_name=true
+  rules:
   - "DOMAIN-KEYWORD,glados,\U0001F9F1 GFW"
   - "DOMAIN-KEYWORD,workers,\U0001F9F1 GFW"
   - "DOMAIN-KEYWORD,faka,\U0001F9F1 GFW"

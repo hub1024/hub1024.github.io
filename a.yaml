@@ -37,14 +37,20 @@ proxy-groups:
     type: "select"
     proxies:
         - "\U0001F514 Auto-Fast"
+        - "\U0001F680 SF"       
+        - "\U0001F680 PKU"        
+        - "\U0001F680 YiYuan"       
         - "\U0001F680 GLaDOS"
-        - "\U0001F680 PKU"
-        - "\U0001F680 SF"
   - name: "\U0001F6D1 AD"
     proxies:
       - DIRECT
       - REJECT
     type: select
+  - name: "\U0001F680 SF"
+    proxies: []
+    type: select
+    use:
+      - provider-SF      
   - name: "\U0001F680 PKU"
     proxies: []
     type: select
@@ -60,11 +66,6 @@ proxy-groups:
     type: select
     use:
       - provider-yiyuan     
-  - name: "\U0001F680 SF"
-    proxies: []
-    type: select
-    use:
-      - provider-SF  
 proxy-providers:
   provider-gfw:
     health-check:
@@ -83,7 +84,7 @@ proxy-providers:
     interval: 3600
     path: ./provider-glados.yaml
     type: http
-    url: https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fupdate.glados-config.com%2Fclash%2F5927%2F2a19dc7%2F11417%2Fglados.yaml&insert=false&emoji=true&list=true&tfo=false&scv=true&fdn=false&sort=false&udp=true&new_name=true
+    url: https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fupdate.glados-config.com%2Fclash%2F5927%2F2a19dc7%2F11417%2Fglados.yaml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&emoji=true&list=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
   provider-SF:
     health-check:
       enable: true

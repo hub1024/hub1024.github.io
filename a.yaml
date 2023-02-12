@@ -55,6 +55,11 @@ proxy-groups:
     type: select
     use:
       - provider-glados
+  - name: "\U0001F680 YiYuan"
+    proxies: []
+    type: select
+    use:
+      - provider-yiyuan     
   - name: "\U0001F680 SF"
     proxies: []
     type: select
@@ -88,13 +93,13 @@ proxy-providers:
     path: ./provider-SF.yaml
     type: http
     url: https://api.v1.mk/sub?target=clash&url=https%3A%2F%2F233588.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dfabeac1d46da1b2e7bb48c367d86e38a&insert=false&emoji=true&list=true&tfo=false&scv=true&fdn=false&sort=false&udp=true&new_name=true
-  provider-glados:
+  provider-yiyuan:
     health-check:
       enable: true
       interval: 3600
       url: http://www.gstatic.com/generate_204
     interval: 3600
-    path: ./provider-glados.yaml
+    path: ./provider-yiyuan.yaml
     type: http
     url: https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fxn--4gq62f52gdss.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D6577b814600e34a92b478256f46e0889&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&emoji=true&list=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
 rules:
